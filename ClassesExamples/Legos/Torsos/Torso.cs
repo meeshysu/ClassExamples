@@ -22,7 +22,7 @@ namespace ClassesExamples.Legos.Torsos
 
         public virtual void Wave()
         {
-            Console.WriteLine("Waves hello 0/");
+            Console.WriteLine(@"Waves hello 0/");
         }
     }
 

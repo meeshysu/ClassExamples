@@ -7,7 +7,7 @@ namespace ClassesExamples.Legos.Torsos
 {
     class FitTorso : Torso
     {
-        public FitTorso(int numberOfArms, Sex sex, Colors color) 
+        public FitTorso(int numberOfArms, Sex sex = Sex.Shrug, Colors color = Colors.Red) //we pass base thru so we can access the parts of the torso we don't have access with as fittorso
             : base(numberOfArms, sex, color, "OMG, so fitt!!!")//constructor -- no return type on this guy
         {
         }

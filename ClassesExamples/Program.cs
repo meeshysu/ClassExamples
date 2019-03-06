@@ -1,6 +1,7 @@
 ﻿using System;
 using ClassesExamples.Legos;
 using ClassesExamples.Legos.Heads;
+using ClassesExamples.Legos.Legs;
 using ClassesExamples.Legos.Torsos;
 
 namespace ClassesExamples
@@ -9,11 +10,11 @@ namespace ClassesExamples
     {
         private static void Main(string[] args)
         {
-            var taffy = new Candy("Orange", "Orange Saltwater Taffy", CandyType.Stretchy);
+            //var taffy = new Candy("Orange", "Orange Saltwater Taffy", CandyType.Stretchy);
 
-            taffy.SetRating(10); //calling this from the other page
+            //taffy.SetRating(10); //calling this from the other page
 
-            Console.WriteLine(taffy);
+            //Console.WriteLine(taffy);
 
 
             var myDogHead = new Dog();
@@ -26,7 +27,9 @@ namespace ClassesExamples
             var fitTorso = new FitTorso(2, Sex.Male, Colors.Freckles);
             fitTorso.Crunch(12);
 
-            var minifigure = new MiniFigure(martinHead, fitTorso);
+            var adamsLegs = new OrangeLegs(Length.Short);
+
+            var minifigure = new MiniFigure("Adam", martinHead, fitTorso, adamsLegs);
 
             minifigure.Greet();
 

@@ -16,7 +16,7 @@ namespace ClassesExamples.Legos.Heads
         //Methods
         public void Cut(HairLength newLength)
         {
-            HairLength = newLength;
+            HairLength = HairLength.CompletelyBald;
         }
 
         public override string Talk()
